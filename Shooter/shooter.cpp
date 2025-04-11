@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <conio.h>
 using namespace std;
 using std::cin;
@@ -29,31 +29,31 @@ void main()
 	cout << "Shooter" << endl;
 #ifdef SHOOTER1
 	char key;
-	cout << "Ñòðåëÿëêà" << endl << "(w - âïåðåä, s - íàçàä, a - âëåâî, d - âïðàâî, Space - ïðûæîê, Enter - îãîíü, Escape - âûõîä)" << endl;
+	cout << "Ð¡Ñ‚Ñ€ÐµÐ»ÑÐ»ÐºÐ°" << endl << "(w - Ð²Ð¿ÐµÑ€ÐµÐ´, s - Ð½Ð°Ð·Ð°Ð´, a - Ð²Ð»ÐµÐ²Ð¾, d - Ð²Ð¿Ñ€Ð°Ð²Ð¾, Space - Ð¿Ñ€Ñ‹Ð¶Ð¾Ðº, Enter - Ð¾Ð³Ð¾Ð½ÑŒ, Escape - Ð²Ñ‹Ñ…Ð¾Ð´)" << endl;
 	do
 	{
 		key = _getch();
 		if (key == w || key == W)
-			cout << "âïåðåä" << endl;
+			cout << "Ð²Ð¿ÐµÑ€ÐµÐ´" << endl;
 		else if (key == a || key == A)
 		{
-			cout << "âëåâî" << endl;
+			cout << "Ð²Ð»ÐµÐ²Ð¾" << endl;
 		}
 		else if (key == s || key == S)
 		{
-			cout << "íàçàä" << endl;
+			cout << "Ð½Ð°Ð·Ð°Ð´" << endl;
 		}
 		else if (key == d || key == D)
 		{
-			cout << "âïðàâî" << endl;
+			cout << "Ð²Ð¿Ñ€Ð°Ð²Ð¾" << endl;
 		}
 		else if (key == Enter)
 		{
-			cout << "îãîíü" << endl;
+			cout << "Ð¾Ð³Ð¾Ð½ÑŒ" << endl;
 		}
 		else if (key == Space)
 		{
-			cout << "ïðûæîê" << endl;
+			cout << "Ð¿Ñ€Ñ‹Ð¶Ð¾Ðº" << endl;
 		}
 		//		cout << (int)key << "\t" << key << endl;
 	} while (key != Escape);
@@ -65,13 +65,13 @@ void main()
 	{
 		key = _getch();
 		//cout << (int)key << "\t" << key << endl;
-		if (key == 'w' || key == 'W' || key == UpArrow) cout << "Âïåðåä" << endl;
-		else if (key == 's' || key == 'S' || key == DownArrow) cout << "Íàçàä" << endl;
-		else if (key == 'a' || key == 'A' || key == LeftArrow) cout << "Âëåâî" << endl;
-		else if (key == 'd' || key == 'D' || key == RightArrow) cout << "Âïðàâî" << endl;
-		else if (key == ' ') cout << "Ïðûæîê" << endl;
-		else if (key == Enter) cout << "Îãîíü" << endl;
-		else if (key == Escape) cout << "Âûõîä" << endl;
+		if (key == 'w' || key == 'W' || key == UpArrow) cout << "Ð’Ð¿ÐµÑ€ÐµÐ´" << endl;
+		else if (key == 's' || key == 'S' || key == DownArrow) cout << "ÐÐ°Ð·Ð°Ð´" << endl;
+		else if (key == 'a' || key == 'A' || key == LeftArrow) cout << "Ð’Ð»ÐµÐ²Ð¾" << endl;
+		else if (key == 'd' || key == 'D' || key == RightArrow) cout << "Ð’Ð¿Ñ€Ð°Ð²Ð¾" << endl;
+		else if (key == ' ') cout << "ÐŸÑ€Ñ‹Ð¶Ð¾Ðº" << endl;
+		else if (key == Enter) cout << "ÐžÐ³Ð¾Ð½ÑŒ" << endl;
+		else if (key == Escape) cout << "Ð’Ñ‹Ñ…Ð¾Ð´" << endl;
 		else if (key != - 32) cout << "Error" << endl;
 	} while (key != Escape);
 #endif // SHOOTER_2
@@ -86,18 +86,18 @@ void main()
 		{
 		case 'w':
 		case 'W':
-		case UpArrow: cout << "Âïåðåä" << endl; break;
+		case UpArrow: cout << "Ð’Ð¿ÐµÑ€ÐµÐ´" << endl; break;
 		case 's':
 		case 'S':
-		case DownArrow: cout << "Íàçàä" << endl; break;
+		case DownArrow: cout << "ÐÐ°Ð·Ð°Ð´" << endl; break;
 		case 'a':
 		case 'A':
-		case LeftArrow: cout << "Âëåâî" << endl; break;
+		case LeftArrow: cout << "Ð’Ð»ÐµÐ²Ð¾" << endl; break;
 		case 'd':
 		case 'D':
-		case RightArrow: cout << "Âïðàâî" << endl; break;
-		case Space: cout << "Ïðûæîê" << endl; break;
-		case Enter: cout << "Îãîíü" << endl; break;
+		case RightArrow: cout << "Ð’Ð¿Ñ€Ð°Ð²Ð¾" << endl; break;
+		case Space: cout << "ÐŸÑ€Ñ‹Ð¶Ð¾Ðº" << endl; break;
+		case Enter: cout << "ÐžÐ³Ð¾Ð½ÑŒ" << endl; break;
 		case Escape:
 		case -32: break;
 		default: cout << "Error" << endl;
